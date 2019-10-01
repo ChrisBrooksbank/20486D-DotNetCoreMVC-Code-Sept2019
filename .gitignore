@@ -5,6 +5,9 @@ project.lock.json
 *.pyc
 nupkg/
 
+# sqllite
+sqlite3
+
 # Visual Studio Code
 .vscode
 
