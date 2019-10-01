@@ -14,7 +14,10 @@ namespace CitiesWebsite.Models
 
         public City(string country, string cityName, string timeZone, CityPopulation population)
         {
-
+            Country = country;
+            Name = cityName;
+            TimeZone = timeZone;
+            Population = population;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace CitiesWebsite.Services
 
         public CityProvider()
         {
-
+            _cities = CityInitializer();
         }
 
         public City this[string name]
