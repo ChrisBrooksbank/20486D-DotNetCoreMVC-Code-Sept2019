@@ -1,0 +1,16 @@
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.deps.json
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.runtimeconfig.json
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.runtimeconfig.dev.json
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.dll
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.pdb
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\bin\Debug\netcoreapp2.1\PollBall.Views.dll
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.csproj.CoreCompileInputs.cache
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorAssemblyInfo.cache
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorAssemblyInfo.cs
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.AssemblyInfoInputs.cache
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.AssemblyInfo.cs
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorTargetAssemblyInfo.cache
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.dll
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.pdb
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.csproj.CopyComplete
+C:\Allfiles\Mod03\Labfiles\01_PollBall_begin\PollBall\PollBall\obj\Debug\netcoreapp2.1\PollBall.csprojAssemblyReference.cache
