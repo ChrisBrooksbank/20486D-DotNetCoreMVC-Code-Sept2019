@@ -8,6 +8,10 @@ nupkg/
 # sqllite
 sqlite3
 
+#node_modules
+node_modules
+
+
 # Visual Studio Code
 .vscode
 
