@@ -1,7 +1,7 @@
 ﻿$(function() {
     UnableToPurchase();
 
-    $('.form-control-mistake').click(function() {
+    $('.form-control').click(function() {
         var hashtable = {};
         hashtable['Select'] = '0';
         hashtable['Vanilla Ice Cream with Caramel Ripple and Almonds'] = '5';
