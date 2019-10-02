@@ -80,7 +80,8 @@ namespace Cupcakes.Controllers
                                      c => c.CupcakeType,
                                      c => c.Description,
                                      c => c.GlutenFree,
-                                     c => c.Price);
+                                     c => c.Price,
+                                     c => c.CaloricValue);
             if (isUpdated == true)
             {
                 _repository.SaveChanges();
