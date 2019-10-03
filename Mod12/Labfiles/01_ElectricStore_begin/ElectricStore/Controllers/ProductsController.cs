@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ElectricStore.Controllers
 {
@@ -17,16 +17,28 @@ namespace ElectricStore.Controllers
     {
         private StoreContext _context;
         private IHostingEnvironment _environment;
+        private IMemoryCache _memoryCache;
+        private const string PRODUCT_KEY = "Products";
 
-        public ProductsController(StoreContext context, IHostingEnvironment environment)
+        public ProductsController(StoreContext context, IHostingEnvironment environment, IMemoryCache memoryCache)
         {
             _context = context;
             _environment = environment;
+            _memoryCache = memoryCache;
         }
 
         public IActionResult Index()
         {
-            return View();
+            List<Product> products;
+            if (!_memoryCache.TryGetValue(PRODUCT_KEY, out products))
+            {
+                products = _context.Products.ToList();
+                products.Select(c => { c.LoadedFromDatabase = DateTime.Now; return c; }).ToList();
+                MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions();
+                cacheOptions.SetPriority(CacheItemPriority.High);
+                _memoryCache.Set(PRODUCT_KEY, products, cacheOptions);
+            }
+            return View(products);
         }
 
         public IActionResult GetByCategory(int Id)
