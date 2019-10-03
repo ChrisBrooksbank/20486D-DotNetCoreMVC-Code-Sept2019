@@ -50,11 +50,13 @@ namespace Library.Controllers
             return RedirectToAction("Index", "Library");
         }
 
+
         public IActionResult Register()
         {
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost, ActionName("Register")]
         public async Task<IActionResult> RegisterPost(RegisterViewModel registerModel)
         {

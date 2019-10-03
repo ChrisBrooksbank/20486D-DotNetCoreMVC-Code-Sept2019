@@ -54,6 +54,7 @@ namespace Library.Controllers
             return View(book);
         }
 
+        [ValidateAntiForgeryToken]
         [Authorize]
         [HttpPost, ActionName("LendingBook")]
         public async Task<IActionResult> LendingBookPost(int id)

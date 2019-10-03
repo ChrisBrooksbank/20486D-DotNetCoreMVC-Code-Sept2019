@@ -36,6 +36,7 @@ namespace Library.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost, ActionName("AddBook")]
         public IActionResult AddBookPost(Book book)
         {
