@@ -15,6 +15,9 @@
         <a class="navbar-brand" href="@Url.Action("Index", "Products")">Electric Store</a>
         <div class="collapse navbar-collapse" id="nav-content">
             <ul class="navbar-nav" id="nav-content">
+                <cache vary-by-route="RefreshCache">
+                    @await Component.InvokeAsync("NavbarMenu")
+                </cache>
             </ul>
         </div>
     </nav>

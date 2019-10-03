@@ -28,6 +28,7 @@ namespace ElectricStore
             storeContext.Database.EnsureCreated();
 
             app.UseStaticFiles();
+            app.UseDeveloperExceptionPage();
 
             app.UseNodeModules(environment.ContentRootPath);
 
