@@ -20,6 +20,24 @@
                 <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("GetBooksByGener", "Library")">Our Books</a>
                 </li>
+                @if (User.IsInRole("Administrator"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Librarian")">Workers Portal</a>
+                    </li>
+                }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Logout", "Account")">Logout</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Account")">Login</a>
+                    </li>
+                }
             </ul>
         </div>
     </nav>

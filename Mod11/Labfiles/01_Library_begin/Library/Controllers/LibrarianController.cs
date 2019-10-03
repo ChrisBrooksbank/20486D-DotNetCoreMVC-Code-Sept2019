@@ -9,9 +9,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Library.Controllers
 {
+    [Authorize(Policy = "RequireEmail")]
+    [Authorize(Roles = "Administrator")]
+
     public class LibrarianController : Controller
     {
         private LibraryContext _context;
