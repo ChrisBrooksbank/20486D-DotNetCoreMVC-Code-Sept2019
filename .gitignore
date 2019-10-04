@@ -11,6 +11,7 @@ sqlite3
 #node_modules
 node_modules
 
+.dtbcache
 
 # Visual Studio Code
 .vscode
