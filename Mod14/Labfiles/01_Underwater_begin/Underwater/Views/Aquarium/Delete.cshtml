@@ -12,9 +12,18 @@
         </h3>
         @if (Model.ImageName != null)
         {
-            <div>
-                <img class="photo-display-img" src="@Url.Action("GetImage", "Aquarium", new { Id = Model.FishId })" />
-            </div>
+            @if (Model.ImageURL != null)
+            {
+                <div>
+                    <img class="photo-display-img" src="@Model.ImageURL" />
+                </div>
+            }
+            else
+            {
+                <div>
+                    <img class="photo-display-img" src="@Url.Action("GetImage", "Aquarium", new { Id = Model.FishId })" />
+                </div>
+            }
         }
         <div>
             <p class="display-label">
