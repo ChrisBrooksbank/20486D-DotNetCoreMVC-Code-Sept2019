@@ -18,6 +18,13 @@ namespace Client.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            await PopulateEmployeeRequirementsDropDownListAsync();
+            return View();
+        }
+
         private async Task PopulateEmployeeRequirementsDropDownListAsync()
         {
             HttpClient httpClient = _httpClientFactory.CreateClient();
