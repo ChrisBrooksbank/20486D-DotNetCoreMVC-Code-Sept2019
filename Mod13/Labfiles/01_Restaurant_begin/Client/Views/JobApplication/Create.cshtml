@@ -11,8 +11,7 @@
             <div class="form-group row">
                 <label asp-for="EmployeeRequirements" class="col-sm-4 col-form-label"></label>
                 <div class="col-sm-6">
-                    <select asp-for="EmployeeRequirementsId" asp-items="ViewBag.EmployeeRequirements" class="form-control" placeholder="Job title" required>
-                    </select>
+                    <select asp-for="EmployeeRequirementsId" asp-items="ViewBag.EmployeeRequirements" class="form-control" placeholder="Job title" required></select>
                     <span asp-validation-for="EmployeeRequirementsId"></span>
                 </div>
             </div>
@@ -61,3 +60,9 @@
         </form>
     </div>
 </div>
+
+@section Scripts{
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/wanted-ad-post.js"></script>
+}
