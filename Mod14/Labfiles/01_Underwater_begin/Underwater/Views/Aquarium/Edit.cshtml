@@ -33,6 +33,13 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label asp-for="CommonName" class="col-sm-6 col-form-label"></label>
+                    <div class="col-sm-6">
+                        <input asp-for="CommonName" type="text" class="form-control" placeholder="Common Name" required>
+                        <span asp-validation-for="CommonName"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <img class="photo-display-img" src="@Url.Action("GetImage", "Aquarium", new { Id = Model.FishId })" />
                 </div>
                 <div class="form-group row">

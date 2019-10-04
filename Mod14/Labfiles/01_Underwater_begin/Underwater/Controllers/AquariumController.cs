@@ -78,8 +78,9 @@ namespace Underwater.Controllers
                                 "",
                                 f => f.AquariumId,
                                 f => f.Name,
-                                f => f.ScientificName
-                               );
+                                f => f.ScientificName,
+                                f => f.CommonName
+                                );
             if (isUpdated)
             {
                 _repository.SaveChanges();

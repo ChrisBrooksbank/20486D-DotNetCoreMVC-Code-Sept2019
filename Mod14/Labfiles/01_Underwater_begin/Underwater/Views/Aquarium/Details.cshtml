@@ -25,6 +25,16 @@
             </p>
         </div>
         <div>
+            <p class="display-label">
+                @Html.DisplayNameFor(model => model.CommonName)
+            </p>
+            <br />
+            <p class="display-field">
+                @Html.DisplayFor(model => model.CommonName)
+            </p>
+        </div>
+
+        <div>
             <button class="btn btn-secondary" type="button" onclick="location.href='@Url.Action("Index", "Aquarium")'">Back</button>
         </div>
     </div>
